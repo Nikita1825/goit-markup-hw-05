@@ -109,6 +109,10 @@ clip: rect(0
 
 letter-spacing: 0.02em;
 color: var(--title-text-color);
+
+transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .header-link:hover,.header-link:focus  {
     color: var(--accent-color);
@@ -119,6 +123,10 @@ color: var(--title-text-color);
 
 letter-spacing: 0.02em;
 color: var(--prime-text-color);
+
+transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .contact  {
 font-weight: 400;
@@ -206,6 +214,10 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
 padding: 16px 32px;
 
+transition-property: box-shadow, background-color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .hero-btn:hover {
     color: var(--white-text);
@@ -245,13 +257,34 @@ background-color: #FCFCFC;
 }
 
 
+.modal-button {
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid rgba(46, 47, 66, 0.1);
+    top: 24px;
+    right: 24px;
+    background-color: var(--button-primary-color);
+    width: 24px;
+    height: 24px;
+    transition-property: border, background-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-modal {
+width: 8px;
+height: 8px;
+}
 
 
 
 
-
-
-
+.modal-button:active {
+    background-color: #404BBF;
+    border: 1px solid #404BBF;
+    fill: #FFFFFF;}
 
 
 
@@ -331,6 +364,10 @@ text-align: center;
     justify-content: center;
     width: 40px;
     height: 40px;
+
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 .team-icons:hover,.team-icons:focus {
@@ -365,6 +402,10 @@ padding-bottom: 120px;
     align-items: center;
     justify-content: center;
     fill: #8E8F99;
+
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -438,6 +479,10 @@ color: var(--white-text);
     display: flex;
     align-items: center;
     justify-content: center;
+
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-icons-footer:hover,.team-icons-footer:focus {
     background: #31D0AA;
@@ -496,6 +541,10 @@ clip: rect(0
     color: var(--title-text-color); 
     padding-bottom: 24px;
     position: relative;
+
+transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .current:after {
@@ -581,6 +630,11 @@ letter-spacing: 0.04em;
 cursor: pointer;
 color: var(--accent-color);
 background: var(--white);
+
+
+transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 
 }
 
