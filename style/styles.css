@@ -238,6 +238,7 @@ border-radius: 4px;
 .backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
+    transition:  var(--main-transition);
 }
 
 .modal {
@@ -247,7 +248,7 @@ border-radius: 4px;
    transform: translate(-50%, -50%) scaleX(1);
 /* transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
-transition: transform var(--main-transition);
+transition:  var(--main-transition);
 
 min-width: 408px;
 min-height: 584px;
@@ -266,6 +267,7 @@ background-color: #FCFCFC;
     top: 24px;
     right: 24px;
     background-color: var(--button-primary-color);
+    cursor: pointer;
     width: 24px;
     height: 24px;
     transition: border var(--main-transition), background-color var(--main-transition), fill var(--main-transition);
